@@ -27,9 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // routes
 app.get("/", (req, res) => {
-	res.render("index", {
-		error: null,
-	});
+	res.render("index");
 });
 app.get("/admin/contact", getContactsListHandler);
 app.post("/contact", postContactHandler);
