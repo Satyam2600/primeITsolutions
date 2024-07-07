@@ -10,6 +10,7 @@
 		"dev": "nodemon index.js"
 	},
 	"dependencies": {
+		"dayjs": "^1.11.11",
 		"dotenv": "^16.4.5",
 		"ejs": "^3.1.10",
 		"express": "^4.19.2",

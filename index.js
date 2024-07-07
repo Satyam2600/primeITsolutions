@@ -3,6 +3,10 @@ import mongoose from "mongoose";
 import { config } from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
+import {
+	getContactsListHandler,
+	postContactHandler,
+} from "./controller/contact.controller.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,8 +27,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // routes
 app.get("/", (req, res) => {
-	res.render("index");
+	res.render("index", {
+		error: null,
+	});
 });
+app.get("/admin/contact", getContactsListHandler);
+app.post("/contact", postContactHandler);
 
 const startServer = async () => {
 	// connect to database

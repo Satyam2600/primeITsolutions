@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact List</title>
+
+		<%- include('./utils/head.ejs') %>
+		<link rel="stylesheet" href="/css/contactList.css" />
+	</head>
+	<body>
+		<table class="contactListTable">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Contact Info</th>
+					<th>Subject</th>
+					<th>Message</th>
+					<th>Created At</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% if (contacts.length > 0) { %> <% contacts.forEach(contact => { %>
+				<tr>
+					<td><%= contact.name %></td>
+					<td><%= contact.contactInfo %></td>
+					<td><%= contact.subject %></td>
+					<td><%= contact.message %></td>
+					<td><%= contact.createdAt %></td>
+				</tr>
+				<% }) %> <% } else { %>
+				<tr>
+					<td colspan="4">No contacts found.</td>
+				</tr>
+				<% } %>
+			</tbody>
+		</table>
+	</body>
+</html>

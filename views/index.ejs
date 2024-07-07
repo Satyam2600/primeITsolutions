@@ -5,9 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Prime IT Solutions</title>
 
-		<link rel="stylesheet" href="/css/index.css" />
+		<%- include('./utils/head.ejs') %>
 	</head>
 	<body>
 		<h1>Welcome to prime it solutions</h1>
+
+		<% if (error) { %> <%- error %> <% } %>
+
+		<form action="/contact" method="POST">
+			<input type="text" name="name" placeholder="Name" required />
+			<input type="text" name="subject" placeholder="Subject" required />
+			<input
+				type="text"
+				name="contactInfo"
+				placeholder="Contact Information"
+				required
+			/>
+			<textarea name="message" placeholder="Message" required></textarea>
+			<button type="submit">Submit</button>
+		</form>
 	</body>
 </html>

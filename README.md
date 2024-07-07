@@ -16,4 +16,4 @@ You can also take reference from `.env.example` file
 
 1. We are using `ejs` as our template engine so you can't use `.html` you have to use `.ejs` extension
 1. All the views are in `views` folder
-1. All static files such as css, js, images are in `public` folder
+1. All static files such as css, js, images are in `public` folder. To use them in your views you can use `/public/your-file-path`
