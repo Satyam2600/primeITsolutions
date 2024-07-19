@@ -1,9 +1,35 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	margin: 0px;
+	box-sizing: border-box; 
 }
-
-html {
-	font-size: 62.5%; /* 1rem = 10px */
+nav {
+  display: flex;
+  background-color: white;
+  color: rgba(240, 235, 235, 0.521);
+  align-items: center;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+.logo {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  width: 100%;
+  
+  font-size: 16px;
+}
+.cntainer{
+	padding:0px 50px;
+}
+.logo{
+  left: auto !important;
+    position: relative !important;
+    width: 100px;
+    height: 70px;
 }
