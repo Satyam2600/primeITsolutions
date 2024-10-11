@@ -264,6 +264,7 @@ a.link-dark.link-offset-1.link-opacity-75-hover.link-underline-opacity-0.link-un
   border-radius: 20px;
   height: 370px;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 input.form-control:focus {
   border-color: #f3580a;
@@ -426,25 +427,25 @@ p {
 /* Smallest screens (315px - 414px) */
 @media (max-width: 414px) {
     h1 {
-        font-size: 22px;
+        font-size: 22px !important;
     }
     h2 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     h3 {
-        font-size: 18px;
+        font-size: 18px !important;
     }
     h4 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     h5 {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     h6 {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     p {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 
@@ -745,7 +746,8 @@ h1{
   .bottom-spacing {
     margin-bottom: 1rem; /* Adjust for very small screens */
   }
-  .foot-logo{
+  .foot-
+  {
     width: 6rem;
     height: 5rem
   }
@@ -874,6 +876,69 @@ h1{
 
 }
   
+@media (max-width: 301px) {
+ h1 {
+    font-size: 1.8rem; /* 28.8px */
+  }
+  h2 {
+    font-size: 1.6rem; /* 25.6px */
+  }
+  h3 {
+    font-size: 1.4rem; /* 22.4px */
+  }
+  h4 {
+    font-size: 1.2rem; /* 19.2px */
+  }
+  h5 {
+    font-size: 1rem; /* 16px */
+  }
+  h6 {
+    font-size: 0.9rem; /* 14.4px */
+  }
+  p {
+    font-size: 0.85rem; /* 13.6px */
+  }
+}
+.logo {
+  width: 5rem;  /* Default width (80px) for extra small screens */
+  height: auto; /* Maintains aspect ratio */
+}
+
+@media (min-width: 375px) {
+  .logo {
+    width: 5.5rem; /* Small screen (375px) (88px) */
+  }
+}
+
+@media (min-width: 414px) {
+  .logo {
+    width: 6rem; /* Small screen (414px) (96px) */
+  }
+}
+
+@media (min-width: 576px) {
+  .logo {
+    width: 6.5rem; /* Small screen (sm) and up (104px) */
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 7rem; /* Medium screen (md) and up (112px) */
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    width: 8rem; /* Large screen (lg) and up (128px) */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 9rem; /* Extra large screen (xl) and up (144px) */
+  }
+}
 
 
 
