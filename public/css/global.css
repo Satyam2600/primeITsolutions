@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.carousel-text {
+  padding: 10px 15px;
+}
 
 h1 {
   font-size: 46px;
@@ -53,11 +56,7 @@ h5 {
   background-color: #e61d0b;
   color: white;
 }
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check) + .btn:active {
-}
+
 .card {
   transition: all ease-in 0.5s;
 }
@@ -426,26 +425,36 @@ p {
 
 /* Smallest screens (315px - 414px) */
 @media (max-width: 414px) {
-    h1 {
-        font-size: 22px !important;
+   h1 {
+    font-size: 20px !important;
+}
+h2 {
+    font-size: 20px !important;
+}
+h3 {
+    font-size: 18px !important;
+}
+h4 {
+    font-size: 16px !important;
+}
+h5 {
+    font-size: 14px !important;
+}
+h6 {
+    font-size: 12px !important;
+}
+p {
+    font-size: 12px !important;
+}
+
+    .carousel-text h1 {
+      font-size: 19px !important ;
     }
-    h2 {
-        font-size: 20px !important;
+    .carousel-text p {
+      font-size: 12px;
     }
-    h3 {
-        font-size: 18px !important;
-    }
-    h4 {
-        font-size: 16px !important;
-    }
-    h5 {
-        font-size: 14px !important;
-    }
-    h6 {
-        font-size: 12px !important;
-    }
-    p {
-        font-size: 12px !important;
+    .carousel-text{
+      padding: 10px 5px;
     }
 }
 
@@ -862,9 +871,7 @@ h1{
         text-align: center;
     margin: 0px !important;
   }
-  p{
-    font-size: 15px !important;
-  }
+
   .foot-logo{
     width: 7rem;
     height: 6rem;
@@ -903,11 +910,75 @@ h1{
   width: 5rem;  /* Default width (80px) for extra small screens */
   height: auto; /* Maintains aspect ratio */
 }
+@media (max-width: 320px) {
+  .carousel-text h1{
+    font-size: 20px !important;
+  }
+  .carousel-text{
+    padding: 10px 15px;
+  }
 
-@media (min-width: 375px) {
+  h2 {
+    font-size: 1.1rem !important; /* 18px */
+  }
+
+  h3 {
+    font-size: 1rem !important; /* 16px */
+  }
+
+  h4 {
+    font-size: 0.95rem !important; /* 15.2px */
+  }
+
+  h5 {
+    font-size: 0.85rem !important; /* 13.6px */
+  }
+
+  h6 {
+    font-size: 0.8rem !important; /* 12.8px */
+  }
+
+  p {
+    font-size: 0.85rem !important; /* 13.6px */
+  }
+}
+@media (max-width: 375px) {
   .logo {
     width: 5.5rem; /* Small screen (375px) (88px) */
   }
+   .carousel-text h1{
+    font-size: 17px !important;
+  }
+   .carousel-text P{
+    font-size: 12px !important;
+  }
+ 
+   
+
+  h2 {
+    font-size: 1.25rem !important; /* 20px */
+  }
+
+  h3 {
+    font-size: 1.1rem !important; /* 18px */
+  }
+
+  h4 {
+    font-size: 1rem !important; /* 16px */
+  }
+
+  h5 {
+    font-size: 0.95rem !important; /* 15.2px */
+  }
+
+  h6 {
+    font-size: 0.9rem !important; /* 14.4px */
+  }
+
+  p {
+    font-size: 0.9rem !important; /* 14.4px */
+  }
+
 }
 
 @media (min-width: 414px) {
@@ -937,6 +1008,66 @@ h1{
 @media (min-width: 1200px) {
   .logo {
     width: 9rem; /* Extra large screen (xl) and up (144px) */
+  }
+}
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For 320px width screen */
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.85rem;
   }
 }
 
