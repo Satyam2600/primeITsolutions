@@ -1,26 +1,30 @@
 {
-	"name": "primeITsolutions",
-	"version": "1.0.0",
-	"main": "index.js",
-	"repository": "git@github.com:Satyam2600/primeITsolutions.git",
-	"author": "Satyam",
-	"type": "module",
-	"license": "MIT",
-	"scripts": {
-		"dev": "nodemon index.js",
-		"start": "node index.js"  
-	},
-	"dependencies": {
-		"aos": "^2.3.4",
-		"bootstrap": "^5.3.3",
-		"dayjs": "^1.11.11",
-		"dotenv": "^16.4.5",
-		"ejs": "^3.1.10",
-		"express": "^4.21.1",
-		"mongodb": "^6.9.0",
-		"mongoose": "^8.4.5"
-	},
-	"devDependencies": {
-		"nodemon": "^3.1.4"
-	}
+  "name": "primeITsolutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Satyam2600/primeITsolutions.git",
+  "author": "Satyam",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "18": "^0.0.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": "18.x"
+  }
 }
