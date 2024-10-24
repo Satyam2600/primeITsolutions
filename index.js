@@ -11,6 +11,9 @@ import {
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+// Example of contact.controller.js
+
+
 
 config();
 
@@ -25,6 +28,8 @@ const viewsPath = path.join(__dirname, "views");
 app.set("views", viewsPath);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+console.log(`Serving static files from ${path.join(__dirname, "public")}`);
 
 // routes
 app.get("/", (req, res) => {
